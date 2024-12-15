@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #F1D3B2; /* Light background color */
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            background: #46211A; /* Primary color */
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            animation: scaleUp 0.3s ease;
+        }
+        header {
+            padding: 2rem 0;
+            background: #A43820; /* Accent color */
+            margin-bottom: 2rem;
+            animation: slideIn 1s ease-out;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: white;
+        }
+        .about-me-container {
+            padding: 2rem;
+            background: white;
+            margin: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        table {
+            width: 70%; /* Reduced table width to 70% */
+            margin: 20px auto; /* Center the table horizontally */
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #46211A; /* Primary color */
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+        td {
+            font-family: 'DM Sans', sans-serif;
+            color: #555;
+        }
+        footer {
+            background: #46211A; /* Primary color */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer a {
+            color: #F1D3B2; /* Light color */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation Definitions */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes scaleUp {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <p>Learn more about my background, skills, and experiences</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html" class="active">About Me</a>
+        <a href="interest.html">Personal Interest</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quotes.html">Quotes</a>
+    </nav>
+
+    <!-- About Me Content -->
+    <table>
+        <caption style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">Background</caption>
+        <tr>
+            <td style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #333;">I'm Aya!</td>
+        </tr>
+        <tr>
+            <td style="font-size: 1rem; color: #555; text-align: justify;">
+                Hi there! I'm Alia Rahmatunnisa binti Mohd Rosly, but you can call me Aya. I'm from KCDIM1105C and currently in my final semester at UiTM Kedah, studying information management. Although this wasn't my original plan, I’ve embraced the journey and learned a lot along the way.
+                <br> 
+                <br>
+                I'm passionate about design, writing, and project organization. I love collaborating with others and believe that teamwork enhances both the process and results. Recently, I got involved in theater, starting with "Malam Kesucian Jiwa," which sparked my interest in acting—a dream I've had since childhood.
+                <br> 
+                <br>
+                As I wrap up my studies, I'm taking a step back to enjoy time with friends and reflect on my experiences. I'm excited for what lies ahead and look forward to making lasting memories before we all go our separate ways!
+            </td>
+        </tr>
+    </table>
+
+    <!-- Personal Details Table -->
+    <table>
+        <caption style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">Personal Details</caption>
+        <tr>
+            <th>Details</th>
+            <th>Information</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Alia Rahmatunnisa binti Mohd Rosly</td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>Design, Writing, Acting</td>
+        </tr>
+        <tr>
+            <td>Education</td>
+            <td> HIGH SCHOOL : SMK DATO' SERI MAHARAJA LELA
+                <br>
+                <br>
+                 UNIVERSITY : UiTM KEDAH
+            </td>
+    </table>
+
+    
+ <!-- Footer code -->
+    <footer>
+        <!-- Social Media Links -->
+        <a href="https://www.instagram.com/aya.rosly/profilecard/?igsh=Y2g1aW9saHU5emxi" target="_blank"
+          aria-label="Instagram">
+            <img src="image/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://www.linkedin.com/in/alia-rosly-589a17259/" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+            <img src="image/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+        </a>
+
+        <a href="mailto:aliarosly0004@gmail.com" aria-label="Email">
+            <img src="image/gmail.png" alt="Email" style="width: 24px; height: 24px;">
+        </a>
+    </div>
+    <p>&copy; 2024 Alia's Website. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
