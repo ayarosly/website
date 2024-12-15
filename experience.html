@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        nav {
+            background: #330000; /* Dark red */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white; /* Set text to white */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            animation: scaleUp 0.3s ease;
+        }
+
+        header {
+            padding: 2rem 0;
+            background: #73605B; /* Warm brown */
+            margin-bottom: 2rem;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        h1, p {
+            color: white; /* Set text to white */
+        }
+
+        .experience-container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-card {
+            background: #D09683; /* Light peach */
+            padding: 20px;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .experience-card h3 {
+            color: white; /* Set text to white */
+        }
+
+        .experience-card p {
+            color: white; /* Set text to white */
+        }
+
+        .experience-card .date {
+            font-size: 0.9rem;
+            color: #eee; /* Slightly lighter for date text */
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #330000; /* Dark red */
+            color: white; /* Set text to white */
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: white; /* Set text to white */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes scaleUp {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Experience</h1>
+        <p>Explore the professional journey and the experiences that shaped my career</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="interest.html">Personal Interest</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quotes.html">Quotes</a>
+    </nav>
+
+   <div class="experience-container">
+    <div class="experience-card">
+        <img src="image/interships.jpg" alt="Practical Training" style="width: 80%; max-width: 400px; height: auto; margin: 0 auto; display: block; margin-bottom: 10px;">
+        <h3>Education & Practical Training</h3>
+        <p class="date">July 2024 - September 2024</p>
+        <p>
+          In that month, I successfully completed my industrial training at the Taiping Municipality. I am very happy to have achieved this milestone and to have gained valuable experience throughout the process.
+        </p>
+    </div>
+
+    <div class="experience-card">
+        <img src="image/stage.jpg" alt="Stage Manager" style="width: 80%; max-width: 400px; height: auto; margin: 0 auto; display: block; margin-bottom: 10px;">
+        <h3>Stage Manager</h3>
+        <p class="date">Mac 2024</p>
+        <p>
+        In March 2024, I had the opportunity to serve as the stage manager for FESMA at UiTM Terengganu. This experience stands out as one of my core memories, as it taught me invaluable skills and lessons that have significantly shaped my personal and professional growth.
+        </p>
+    </div>
+
+    <div class="experience-card">
+        <img src="image/member.jpg" alt="Member of Sekreteriat Parlimen Mahasiswa" style="width: 80%; max-width: 400px; height: auto; margin: 0 auto; display: block; margin-bottom: 10px;">
+        <h3>Member of Sekreteriat Parlimen Mahasiswa</h3>
+        <p class="date">October 2024</p>
+        <p>
+        In October 2024, I successfully became a member of the Student Parliament Secretariat. This has been one of the best experiences I’ve ever had, as it has provided me with numerous learning opportunities.
+        </p>
+    </div>
+</div>
+
+<!-- Footer code -->
+    <footer>
+        <!-- Social Media Links -->
+        <a href="https://www.instagram.com/aya.rosly/profilecard/?igsh=Y2g1aW9saHU5emxi" target="_blank"
+          aria-label="Instagram">
+            <img src="image/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://www.linkedin.com/in/alia-rosly-589a17259/" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+            <img src="image/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+        </a>
+
+        <a href="mailto:aliarosly0004@gmail.com" aria-label="Email">
+            <img src="image/gmail.png" alt="Email" style="width: 24px; height: 24px;">
+        </a>
+    </div>
+    <p>&copy; 2024 Alia's Website. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        /* Animation Definitions */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(135deg, #f4f4f4, #e6e6e6);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            padding: 2rem 0;
+            background: #73605B;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        nav {
+            background: #330000;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #D09683;
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Grid Layout for Images (4x4) */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 10px;
+            width: 100%;
+            max-width: 1200px; /* Limit the grid width */
+            margin: auto;
+        }
+
+        .image-grid .image-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Overlay for Text */
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-item:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .overlay-text {
+            color: white;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #330000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Smaller Screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9rem;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+
+            .overlay-text {
+                font-size: 1rem; /* Smaller text for better visibility */
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                margin: 5px 0;
+                font-size: 0.8rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr; /* 1 column on very small screens */
+            }
+
+            .overlay-text {
+                font-size: 0.9rem; /* Even smaller text on very small screens */
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quotes</h1>
+        <p style="color: white;">Inspirational quotes to motivate you</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="interest.html">Personal Interest</a>
+        <a href="experience.html">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quotes.html" class="active">Quotes</a>
+    </nav>
+
+    <div class="content">
+        <!-- Image Grid -->
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="image/poetry1.jpg" alt="Image 1">
+                <div class="image-overlay">
+                    <div class="overlay-text"></div>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="image/poetry2.jpg" alt="Image 2">
+                <div class="image-overlay">
+                    <div class="overlay-text"></div>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="image/poetry3.jpg" alt="Image 3">
+                <div class="image-overlay">
+                    <div class="overlay-text"></div>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="image/poetry4.jpg" alt="Image 4">
+                <div class="image-overlay">
+                    <div class="overlay-text"></div>
+                </div>
+            </div>
+            <!-- Add more items as necessary -->
+        </div>
+    </div>
+
+    <!-- Footer code -->
+    <footer>
+        <!-- Social Media Links -->
+        <a href="https://www.instagram.com/aya.rosly/profilecard/?igsh=Y2g1aW9saHU5emxi" target="_blank"
+          aria-label="Instagram">
+            <img src="image/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://www.linkedin.com/in/alia-rosly-589a17259/" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+            <img src="image/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+        </a>
+
+        <a href="mailto:aliarosly0004@gmail.com" aria-label="Email">
+            <img src="image/gmail.png" alt="Email" style="width: 24px; height: 24px;">
+        </a>
+    </div>
+    <p>&copy; 2024 Alia's Website. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
